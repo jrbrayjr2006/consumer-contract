@@ -1,5 +1,8 @@
 # consumer-contract
 
+## NOTE
+This is still a work in progress so the documentation and code will change frequently.  The direction  of the project may change before the release code is finalized.  Use this code at your own risk.
+
 ## Purpose
 The purpose of this microservice is to provide a working example of a consumer of a Spring Cloud Contract using messaging.
 

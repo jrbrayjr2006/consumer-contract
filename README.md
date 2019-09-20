@@ -40,5 +40,5 @@ public class ConsumerContractTest {
 
 ## References
 
-- [ntroducing Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/reference/html/getting-started.html#getting-started-introducing-spring-cloud-contract)
+- [Introducing Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/reference/html/getting-started.html#getting-started-introducing-spring-cloud-contract)
 - [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)

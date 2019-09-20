@@ -33,8 +33,8 @@ This test assumes the stubs from the producer are available locally in the local
 @AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL, ids = "com.jrbrayjr.spring.cloud.stream:producer-contract:+:stubs")
 @ExtendWith(SpringExtension.class)
 public class ConsumerContractTest {
-    ...
-    ...
+    @Autowired
+    StubTrigger stubTrigger;
     
     ...
     ...
@@ -44,4 +44,5 @@ public class ConsumerContractTest {
 ## References
 
 - [Introducing Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/reference/html/getting-started.html#getting-started-introducing-spring-cloud-contract)
+- [Enforcing Spring Cloud Contracts Over AMQP](https://novotnyr.github.io/scrolls/enforcing-spring-cloud-contracts-over-amqp/)
 - [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)

@@ -106,9 +106,6 @@
 				<version>2.1.2.RELEASE</version>
 				<extensions>true</extensions>
 				<configuration>
-					<baseClassForTests>
-						com.jrbrayjr.spring.cloud.stream.producercontract.ProducerContractTest
-					</baseClassForTests>
 					<testFramework>
 						JUNIT5
 					</testFramework>

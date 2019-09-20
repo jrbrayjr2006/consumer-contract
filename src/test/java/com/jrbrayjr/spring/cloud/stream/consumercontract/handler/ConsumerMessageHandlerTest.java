@@ -10,19 +10,18 @@ import org.springframework.messaging.support.MessageBuilder;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class ProducerMessageHandlerTest {
+class ConsumerMessageHandlerTest {
 
     Sink mockSink;
 
-    ProducerMessageHandler handler;
+    ConsumerMessageHandler handler;
 
     @BeforeEach
     void setUp() {
         mockSink = mock(Sink.class);
-        handler = new ProducerMessageHandler(mockSink);
+        handler = new ConsumerMessageHandler(mockSink);
     }
 
     @Test

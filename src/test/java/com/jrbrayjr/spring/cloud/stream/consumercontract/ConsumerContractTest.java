@@ -14,6 +14,7 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
@@ -26,17 +27,19 @@ public class ConsumerContractTest {
 
     Map<String, String> cityMap;
 
+    @Autowired
     ConsumerMessageListener listener;
 
     public void createCityMessage() {
+        cityMap = new HashMap<>();
         cityMap.put("city", "Chicago");
         Message dummyMessage = generateMessage(cityMap);
         listener.receiveMessage(dummyMessage);
     }
 
     @Test
-    public void dummyTest() {
-        //TODO
+    void dummyTest() {
+        createCityMessage();
     }
 
     private Message<Map<String, String>> generateMessage(Map<String, String> payload) {
